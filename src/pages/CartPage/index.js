@@ -6,7 +6,7 @@ import { SingleProduct } from './SingleProduct';
 
 export const CartPage = () => {
   const reducer = useSelector(state => state.data);
-  console.log(reducer);
+  // console.log(reducer);
 
   return (
     <Container>

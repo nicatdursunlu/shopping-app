@@ -1,11 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
 import { useDispatch } from 'react-redux'
+import styled from 'styled-components';
 
 import { addToCart } from '../../store/cart';
 
 export const SingleProduct = ({ product }) => {
-  
+
   const { name, price, image, desc } = product;
   const dispatch = useDispatch();
 
@@ -76,5 +76,5 @@ const Description = styled.p({
   textAlign: 'center',
   fontSize: 17,
   color: 'gray',
-})
+});
 

@@ -1,10 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
 import { RiShoppingBasketLine } from 'react-icons/ri';
 import { AiOutlineHome } from 'react-icons/ai';
-
-import '../styles/index.sass';
+import styled from 'styled-components';
 
 export const Header = () => {
   return (
@@ -23,10 +21,20 @@ const Container = styled.div({
   backgroundColor: 'blue',
   display: 'flex',
   justifyContent: 'flex-end',
-  padding: 20,
+  padding: 15,
 });
 
 const Link = styled(NavLink)`
+  color: white;
+  font-size: 35px;
+  padding: 0 10px;
 
+  &:hover {
+    transform: scale(1.3);
+  }
+
+  &.active {
+    color: crimson;
+  }
 `;
 

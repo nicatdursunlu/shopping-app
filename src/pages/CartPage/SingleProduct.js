@@ -9,12 +9,9 @@ export const SingleProduct = ({ cartProduct }) => {
   const { name, price, image, desc, qty, id } = cartProduct;
 
   const dispatch = useDispatch();
-
   const removeFromCartHandler = () => {
     dispatch(removeFromCart({ id }));
   }
-
-  // console.log(cartProduct)
 
   return (
     <Container>

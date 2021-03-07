@@ -97,12 +97,8 @@ export function reducer(state = initialState, { type, payload }) {
       };
 
     case REMOVE_FROM_CART:
-      // console.log("state.cartProducts ", state.cartProducts)
       let _cartProducts = state.cartProducts;
-      console.log(payload.id);
       delete _cartProducts[payload.id]
-      console.log(_cartProducts);
-
       return {
         ...state,
         cartProducts: _cartProducts,
@@ -111,7 +107,6 @@ export function reducer(state = initialState, { type, payload }) {
       return state;
   }
 }
-
 
 export const addToCart = (payload) => ({
   type: ADD_TO_CART,
